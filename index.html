@@ -3,38 +3,700 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thinking — Logo Animado</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<title>Thinking</title>
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="Images/LOGO1.png">
+<link rel="icon" type="image/png" sizes="192x192" href="Images/LOGO1.png">
+<link rel="apple-touch-icon" sizes="180x180" href="Images/LOGO1.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Thinking">
+<meta name="application-name" content="Thinking">
+<!-- Theme Color -->
+<meta name="theme-color" content="#8c52ff">
+<meta name="msapplication-TileColor" content="#8c52ff">
+<link rel="icon" type="image/png" href="Images/LOGO1.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 <body>
+<canvas id="starfield"></canvas>
+<!-- =========================
+     NAVBAR
+========================= -->
 
-<div class="stage" id="stage">
-  <canvas id="field"></canvas>
-  <div class="rings">
-    <div class="ring r1"></div>
-    <div class="ring r2"></div>
-    <div class="ring r3"></div>
-  </div>
+<header class="navbar">
 
-  <div class="logo-wrap" id="logoWrap">
-    <div class="logo-orbit" id="logoOrbit">
-      <img class="logo-img" id="logoImg" src="logo.png" alt="Logo" draggable="false">
-      <div class="spark"></div>
-      <div class="hemis" id="hemis"><div class="side left"></div><div class="side right"></div></div>
+    <!-- Logo -->
+    <div class="brand">
+        Thinking
     </div>
-  </div>
+        <nav>
 
-  <div class="caption">
-    <div class="word">mueve el cursor <span>·</span> clic para un pensamiento</div>
-  </div>
+            <ul>
 
-  <div class="vignette"></div>
-  <div class="grain"></div>
+                <li><a href="#top">Home</a></li>
+
+               <li><a href="#how-it-works">What is Thinking?</a></li>
+
+                <li><a href="#learning-styles">Learning Styles</a></li>
+
+                <li><a href="#techniques">Techniques</a></li>
+
+                <li><a href="#about">About us</a></li>
+
+            </ul>
+
+        </nav>
+
+    <!-- Buttons -->
+    <div class="nav-buttons">
+
+        <a href="TYPE ACOUNT/Choose rol.html" class="login-btn">
+
+            Sign in
+
+        </a>
+
+        <a href="TYPE ACOUNT/Choose rol.html" class="signup-btn">
+
+            Sign up
+
+        </a>
+
+    </div>
+
+</header>
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Learn smarter,<br>
+            <span>Think better.</span>
+        </h1>
+
+        <p>
+            Discover your learning style and unlock personalized study techniques to help you reach your full potential.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="start-btn" id="btn-assessment">
+                Start Assessment
+            </button>
+
+            <button class="explore-btn">
+                Explore Techniques
+            </button>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="bombi-container">
+
+            <img src="Images/Bombi_EMOTIONweb.png" class="bulb" alt="Bombi">
+
+            <span class="orb circle"></span>
+            <span class="orb square"></span>
+            <span class="orb triangle"></span>
+            <span class="orb semicircle"></span>
+            <span class="orb dot"></span>
+            <span class="orb ring"></span>
+            <span class="orb diamond"></span>
+            <span class="orb plus"></span>
+            <span class="orb hexagon"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================================================================
+     WHAT IS THINKING?
+=================================================================================================== -->
+
+<section id="how-it-works" class="thinking-v2">
+
+    <div class="thinking-left">
+
+        <span class="thinking-pill">
+            ✨ What is Thinking?
+        </span>
+
+        <h2>
+            <span>Thinking</span> is your personalized study companion.
+        </h2>
+
+        <p class="thinking-description">
+            Thinking helps every student discover the way they learn best.
+            Through a personalized assessment, the platform identifies your
+            learning style and recommends techniques that make studying easier,
+            more effective, and more enjoyable.
+        </p>
+
+        <div class="info-list">
+
+            <div class="info-card">
+
+                <div class="icon-box">
+                    🧠
+                </div>
+
+                <div>
+
+                    <h3>Discover your learning style</h3>
+
+                    <p>
+                        Identify whether you learn best visually,
+                        auditorily or kinesthetically.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <div class="icon-box">
+                    📖
+                </div>
+
+                <div>
+
+                    <h3>Personalized techniques</h3>
+
+                    <p>
+                        Receive study methods adapted to your strengths.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="info-card">
+
+                <div class="icon-box">
+                    🚀
+                </div>
+
+                <div>
+
+                    <h3>Learn smarter</h3>
+
+                    <p>
+                        Improve your academic performance using practical
+                        strategies designed for you.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="discover-btn" id="discover-btn">
+    Discover My Learning Style →
+</button>
+
+    </div>
+
+    <div class="thinking-right">
+
+        <!-- Bombillo -->
+
+        <div class="floating bulb-card">
+
+            💡
+
+        </div>
+
+        <!-- Tarjeta -->
+
+        <div class="floating techniques-card">
+
+            <div class="mini-title">
+
+                Personalized Techniques
+
+            </div>
+
+            <div class="mini-line purple"></div>
+            <div class="mini-line blue"></div>
+            <div class="mini-line gray"></div>
+
+        </div>
+
+        <!-- Círculo -->
+
+        <div class="floating circle-card">
+
+            <div class="progress-circle">
+
+                <span>75%</span>
+
+            </div>
+
+        </div>
+
+        <!-- Bombi -->
+
+        <div class="center-character">
+
+            <img src="Images/Bombi_EMOTIONweb.png" alt="Thinking">
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="floating progress-card">
+
+            <h4>Your Progress</h4>
+
+            <div class="progress-bar">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+            <span>Excellent</span>
+
+        </div>
+
+        <!-- Libros -->
+
+        <div class="floating books-card">
+
+            📚
+
+        </div>
+
+        <!-- Lista -->
+
+        <div class="floating list-card">
+
+            <h4>Recommended</h4>
+
+            <ul>
+
+                <li>✓ Mind Maps</li>
+
+                <li>✓ Flashcards</li>
+
+                <li>✓ Active Recall</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- ==========================================================
+     WHY THINKING?
+========================================================== -->
+
+<section class="why-thinking">
+
+    <h2>
+        Why <span>Thinking?</span>
+    </h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+
+            <div class="why-icon">🧠</div>
+
+            <h3>Personalized Learning</h3>
+
+            <p>
+                We adapt to your learning style and recommend what works best for you.
+            </p>
+
+        </div>
+
+        <div class="why-divider"></div>
+
+        <div class="why-card">
+
+            <div class="why-icon">🎯</div>
+
+            <h3>Proven Techniques</h3>
+
+            <p>
+                Study methods backed by science to help you learn more effectively.
+            </p>
+
+        </div>
+
+        <div class="why-divider"></div>
+
+        <div class="why-card">
+
+            <div class="why-icon">⏰</div>
+
+            <h3>Save Time</h3>
+
+            <p>
+                Focus on what matters and make your study sessions more productive.
+            </p>
+
+        </div>
+
+        <div class="why-divider"></div>
+
+        <div class="why-card">
+
+            <div class="why-icon">📈</div>
+
+            <h3>Better Results</h3>
+
+            <p>
+                Improve your understanding, retain more, and achieve your goals.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================================
+     LEARNING STYLES
+===================================================================== -->
+
+<section id="learning-styles" class="learning-styles">
+
+    <div class="learning-bg-circle circle-1"></div>
+    <div class="learning-bg-circle circle-2"></div>
+
+<div class="learning-badge">
+
+    <span class="badge-icon">
+        ✦
+    </span>
+
+    <span>
+        Discover yourself
+    </span>
+
 </div>
 
+    <h2 class="learning-title">
+        Learning styles,
+        <span>that fit you.</span>
+    </h2>
+
+    <p class="learning-description">
+        Everyone has a unique way of learning. Discover the learning style
+        that best matches you and study using techniques designed
+        specifically for the way you learn.
+    </p>
+
+    <div class="learning-grid">
+
+        <!-- ==================== KINESTHETIC ==================== -->
+
+     <article class="learning-card kinesthetic-card">
+
+            <div class="card-header">
+
+               <div class="card-icon purple">
+    <img src="Images/run-icon.png" alt="">
+</div>
+
+                <h3>Kinesthetic</h3>
+
+            </div>
+
+         <span class="card-pill kinesthetic-pill">
+    Learn by doing
+</span>
+
+            <div class="card-body">
+
+                <div class="card-info">
+
+                    <h4>Best for:</h4>
+
+                    <ul>
+
+                        <li>✓ Hands-on activities</li>
+
+                        <li>✓ Physical engagement</li>
+
+                        <li>✓ Real-life practice</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card-image">
+
+                    <img src="Images/kinesthetic.png" alt="Kinesthetic">
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- ==================== VISUAL ==================== -->
+
+    <article class="learning-card visual-card">
+
+            <div class="card-header">
+
+              <div class="card-icon cyan">
+    <img src="Images/eye-icon.png" alt="">
+</div>
+
+                <h3>Visual</h3>
+
+            </div>
+
+            <span class="card-pill visual-pill">
+    Learn by doing
+</span>
+
+            <div class="card-body">
+
+                <div class="card-info">
+
+                    <h4>Best for:</h4>
+
+                    <ul>
+
+                        <li>✓ Charts & diagrams</li>
+
+                        <li>✓ Mind maps</li>
+
+                        <li>✓ Videos & infographics</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card-image">
+
+                    <img src="Images/visual.png" alt="Visual">
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- ==================== AUDITORY ==================== -->
+
+      <article class="learning-card auditory-card">
+
+            <div class="card-header">
+
+               <div class="card-icon blue">
+    <img src="Images/audio-icon.png" alt="">
+</div>
+
+                <h3>Auditory</h3>
+
+            </div>
+
+           <span class="card-pill auditory-pill">
+    Learn by doing
+</span>
+            <div class="card-body">
+
+                <div class="card-info">
+
+                    <h4>Best for:</h4>
+
+                    <ul>
+
+                        <li>✓ Listening to audio</li>
+
+                        <li>✓ Group discussions</li>
+
+                        <li>✓ Verbal explanations</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="card-image">
+
+                    <img src="Images/auditory.png" alt="Auditory">
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+<!-- =====================================================================================================================================================================
+     STUDY TECHNIQUES
+===================================================================================================================================================================== -->
+
+<section id="techniques" class="techniques">
+
+    <h2>Study Techniques</h2>
+
+    <p class="section-subtitle">
+        Discover methods that improve your performance based on your learning style.
+    </p>
+
+    <div class="techniques-container">
+
+        <div class="technique-card">
+            <div class="technique-icon">👀</div>
+            <h3>Visual Techniques</h3>
+
+            <ul>
+                <li>Mind Mapping</li>
+                <li>Color Coding</li>
+                <li>Diagrams & Charts</li>
+            </ul>
+        </div>
+
+        <div class="technique-card">
+            <div class="technique-icon">🎧</div>
+            <h3>Auditory Techniques</h3>
+
+            <ul>
+                <li>Recorded Notes</li>
+                <li>Group Discussions</li>
+                <li>Read Aloud Method</li>
+            </ul>
+        </div>
+
+        <div class="technique-card">
+            <div class="technique-icon">✋</div>
+            <h3>Kinesthetic Techniques</h3>
+
+            <ul>
+                <li>Hands-on Practice</li>
+                <li>Role Playing</li>
+                <li>Learning Through Movement</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================================================================================================================================
+     ABOUT US
+===================================================================================================================================================================== -->
+
+<section id="about" class="about-us">
+
+    <h2>About Us</h2>
+
+    <p class="section-subtitle">
+        Helping students discover their learning potential through personalized study strategies.
+    </p>
+
+    <div class="about-main">
+
+        <div class="about-text">
+
+            <h3>Learn Smarter with Thinking</h3>
+
+            <p>
+                Thinking is an educational platform designed to help students understand how they learn best.
+                By identifying learning styles and providing personalized study techniques, we make learning
+                more effective, engaging, and enjoyable.
+            </p>
+
+            <p>
+                Our goal is to empower every learner with the tools and knowledge needed to reach their full
+                academic potential.
+            </p>
+
+        </div>
+
+        <div class="about-image">
+            <img src="Images/Bombi_EMOTIONweb.png" alt="Thinking Mascot">
+        </div>
+
+    </div>
+
+    <div class="about-cards">
+
+        <div class="about-card">
+            <div class="about-icon">🎯</div>
+            <h3>Mission</h3>
+            <p>
+                Help students achieve their goals through personalized learning strategies.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div class="about-icon">🚀</div>
+            <h3>Vision</h3>
+            <p>
+                Create a future where every student can learn in the way that works best for them.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <div class="about-icon">💡</div>
+            <h3>Innovation</h3>
+            <p>
+                Combine technology and educational research to improve learning experiences.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     THEME BUTTON
+========================= -->
+
+<button id="theme-toggle" class="theme-toggle-btn">
+    🌙
+</button>
+
+<!-- =========================
+     BOMBI CHAT BUTTON
+========================= -->
+
+<button id="bombi-btn">
+    💡
+</button>
+
+<!-- =========================
+     BOMBI CHAT
+========================= -->
+
+<div id="bombi-chat">
+
+    <div class="chat-header">
+        <span>💡 Bombi AI</span>
+        <button id="close-chat">✕</button>
+    </div>
+
+    <iframe
+        src="https://cdn.botpress.cloud/webchat/v3.6/shareable.html?configUrl=https://files.bpcontent.cloud/2026/06/12/14/20260612145853-UKGOZN9Z.json"
+        frameborder="0">
+    </iframe>
+
+</div>
+  
 <script src="script.js"></script>
+
 </body>
 </html>
